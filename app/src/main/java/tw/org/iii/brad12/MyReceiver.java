@@ -12,5 +12,7 @@ public class MyReceiver extends BroadcastReceiver {
         // an Intent broadcast.
         //throw new UnsupportedOperationException("Not yet implemented");
         Log.v("brad", "onReceive");
+        Intent it = new Intent(context, MyService.class);
+        context.startService(it);
     }
 }
